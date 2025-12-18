@@ -10,34 +10,38 @@
     
     <style>
         :root {
-            --color-primary: #ff6b6b;
+            /* Assumant une couleur principale pour le highlight, si non définie dans style.css */
+            --color-primary: #ff6b6b; /* Conservé comme dans style.css fourni */
         }
         .navbar {
-            background-color: #003366;
+            background-color: #003366; /* Bleu foncé pour la navbar */
+            /* Ajouté pour la cohérence et la résolution du décalage */
             height: 70px;
         }
         .navbar .logo {
-            color: #ffffff;
+            color: #ffffff; /* Texte du logo en blanc */
         }
         .navbar .highlight {
-            color: var(--color-primary);
+            color: var(--color-primary); /* Garde la couleur de surbrillance (ex: rouge/orange) */
         }
         .navbar a {
-            color: #ffffff;
+            color: #ffffff; /* Liens de navigation en blanc */
             transition: color 0.3s;
         }
         .navbar a:hover {
             color: lightgray;
         }
+        /* Assurer que le bouton contact conserve son style s'il a une couleur de fond différente */
         .navbar .btn-contact { 
-            color: #003366;
-            background-color: #ffffff;
+            color: #003366; /* Le texte du bouton est en bleu foncé pour contraster avec le fond clair du bouton (si défini par style.css) */
+            background-color: #ffffff; /* Par exemple, fond blanc pour le bouton */
             border: 1px solid #ffffff;
         }
         .navbar .btn-contact:hover {
             background-color: lightgray;
         }
         
+        /* Correction de l'ancrage (ajouté ici pour être intégré à l'index si style.css est ignoré) */
         #home, #about, #education, #skills, #projects, #contact {
             scroll-margin-top: 80px; 
         }
@@ -139,7 +143,7 @@
                     <li>Technical Problem Solving</li>
                     <li>Quality Control</li>
                     <li>Industrial Processes</li>
-                    <li>Adaptability</li>
+                     <li>Adaptability</li>
                     <li>Teamwork & Reliability</li>
                     <li>Organization & Initiative</li>
                 </ul>
@@ -166,75 +170,75 @@
             <button class="filter-btn" data-filter="programming">Programming</button>
             <button class="filter-btn" data-filter="research">Research</button>
         </div>
-        <div class="projects-grid">
+      <div class="projects-grid">
             
-            <div class="project-card" data-category="biomedical programming" data-modal-target="modal-robotics-internship">
-                <div class="project-image-placeholder" style="background-image: url('https://raw.githubusercontent.com/lgirardet23-svg/images/main/Western_University.png'); background-size: cover; background-position: center;"></div>
-                <h3>Robotics in Neurosurgery (Incoming)</h3>
-                <p>Research Internship focused on ROS2 development and biomechanical control systems for medical robotics.</p>
-            </div>
-            
-            <div class="project-card" data-category="cad biomedical" data-modal-target="modal-niceteeth-project">
-                <div class="project-image-placeholder" style="background-image: url('https://raw.githubusercontent.com/lgirardet23-svg/images/main/Logo_isifc.jpeg'); background-size: contain; background-position: center; background-repeat: no-repeat;"></div>
-                <h3>RTeethC: Concentric Tube Dental Robot</h3>
-                <p>Design and development of a mechatronic intra-oral camera using Nitinol tubes for 360° dental surface inspection.</p>
-            </div>
-            
-            <div class="project-card" data-category="biomedical research" data-modal-target="modal-innovative-devices">
-                <div class="project-image-placeholder" style="background-image: url('https://raw.githubusercontent.com/lgirardet23-svg/images/main/ProjetTut1.jpg'); background-size: cover; background-position: center;"></div>
-                <h3>Innovative MDs for Visual Impairment</h3>
-                <p>Comprehensive state-of-the-art report on non-implantable and neuroprosthetic medical devices for the blind.</p>
-            </div>
-            
-            <div class="project-card" data-category="cad biomedical" data-modal-target="modal-syringe-packaging">
-                <div class="project-image-placeholder" style="background-image: url('https://raw.githubusercontent.com/lgirardet23-svg/images/main/seringue1.png'); background-size: cover; background-position: center;"></div>
-                <h3>Syringe & Packaging System</h3>
-                <p>Full CAD modeling of a safety needle and a custom 7-unit thermal packaging box for veterinarians.</p>
-            </div>
-            
-            <div class="project-card" data-category="cad design" data-modal-target="modal-road-sign-analysis">
-                <div class="project-image-placeholder" style="background-image: url('https://raw.githubusercontent.com/lgirardet23-svg/images/main/MD1.png'); background-size: cover; background-position: center;"></div>
-                <h3>Road Sign Structural Analysis</h3>
-                <p>FEA and mathematical analysis of a cantilevered post structure carrying two motorway signs under wind and weight loads.</p>
-            </div>
+    <div class="project-card" data-category="biomedical programming" data-modal-target="modal-robotics-internship">
+        <div class="project-image-placeholder" style="background-image: url('https://raw.githubusercontent.com/lgirardet23-svg/images/main/Western_University.png'); background-size: cover; background-position: center;"></div>
+        <h3>Robotics in Neurosurgery (Incoming)</h3>
+        <p>Research Internship focused on ROS2 development and biomechanical control systems for medical robotics.</p>
+    </div>
+    
+    <div class="project-card" data-category="cad biomedical" data-modal-target="modal-niceteeth-project">
+        <div class="project-image-placeholder" style="background-image: url('https://raw.githubusercontent.com/lgirardet23-svg/images/main/Logo_isifc.jpeg'); background-size: contain; background-position: center; background-repeat: no-repeat;"></div>
+        <h3>RTeethC: Concentric Tube Dental Robot</h3>
+        <p>Design and development of a mechatronic intra-oral camera using Nitinol tubes for 360° dental surface inspection.</p>
+    </div>
+    
+    <div class="project-card" data-category="biomedical research" data-modal-target="modal-innovative-devices">
+        <div class="project-image-placeholder" style="background-image: url('https://raw.githubusercontent.com/lgirardet23-svg/images/main/ProjetTut1.jpg'); background-size: cover; background-position: center;"></div>
+        <h3>Innovative MDs for Visual Impairment</h3>
+        <p>Comprehensive state-of-the-art report on non-implantable and neuroprosthetic medical devices for the blind.</p>
+    </div>
+    
+    <div class="project-card" data-category="cad biomedical" data-modal-target="modal-syringe-packaging">
+        <div class="project-image-placeholder" style="background-image: url('https://raw.githubusercontent.com/lgirardet23-svg/images/main/seringue1.png'); background-size: cover; background-position: center;"></div>
+        <h3>Syringe & Packaging System</h3>
+        <p>Full CAD modeling of a safety needle and a custom 7-unit thermal packaging box for veterinarians.</p>
+    </div>
+    
+    <div class="project-card" data-category="cad design" data-modal-target="modal-road-sign-analysis">
+        <div class="project-image-placeholder" style="background-image: url('https://raw.githubusercontent.com/lgirardet23-svg/images/main/MD1.png'); background-size: cover; background-position: center;"></div>
+        <h3>Road Sign Structural Analysis</h3>
+        <p>FEA and mathematical analysis of a cantilevered post structure carrying two motorway signs under wind and weight loads.</p>
+    </div>
 
-            <div class="project-card" data-category="research" data-modal-target="modal-nanomaterials-future">
-                <div class="project-image-placeholder" style="background-image: url('https://raw.githubusercontent.com/lgirardet23-svg/images/main/Manuf2.png'); background-size: cover; background-position: center;"></div>
-                <h3>Nanomaterials for a Sustainable Future</h3>
-                <p>Research project exploring the key role of nanotechnology in global sustainability challenges (energy, environment, and manufacturing).</p>
-            </div>
-            
-            <div class="project-card" data-category="cad design" data-modal-target="modal-pingpong-tensegrity">
-                <div class="project-image-placeholder" style="background-image: url('https://raw.githubusercontent.com/lgirardet23-svg/images/main/Tens.png'); background-size: cover; background-position: center;"></div>
-                <h3>Tensegrity Ping-Pong Table</h3>
-                <p>CAD modeling of a full-size ping-pong table structure based on the principle of Tensegrity.</p>
-            </div>
-            
-            <div class="project-card" data-category="cad design" data-modal-target="modal-veliable-bicycle">
-                <div class="project-image-placeholder" style="background-image: url('https://raw.githubusercontent.com/lgirardet23-svg/images/main/VeliableProfile.jpg'); background-size: cover; background-position: center;"></div>
-                <h3>Véliable: The Folding Bicycle</h3>
-                <p>Conceptual CAD design of an urban folding bicycle frame focusing on compactness and ease of transport.</p>
-            </div>            
-            
-            <div class="project-card" data-category="cad design" data-modal-target="modal-paddle-valve">
-                <div class="project-image-placeholder" style="background-image: url('https://raw.githubusercontent.com/lgirardet23-svg/images/main/projet1.png'); background-size: cover; background-position: center;"></div>
-                <h3>Paddleboard Safety Valve</h3>
-                <p>Passive valve system to automatically prevent overinflation of stand-up paddleboards due to solar heating.</p>
-            </div>
-            
-            <div class="project-card" data-category="cad design" data-modal-target="modal-bachelor-showcase">
-                <div class="project-image-placeholder" style="background-image: url('https://raw.githubusercontent.com/lgirardet23-svg/images/main/universite-de-franche-comte1-1200x766.jpg'); background-size: cover; background-position: center;"></div>
-                <h3>Bachelor's Projects Showcase</h3>
-                <p>A collection of CAD, Machining, and Prototyping projects from my engineering undergraduate degree.</p>
-            </div>
-            
-            <div class="project-card" data-category="programming software" data-modal-target="modal-ludo-game">
-                <div class="project-image-placeholder" style="background-image: url('https://raw.githubusercontent.com/lgirardet23-svg/images/main/Algo5.png'); background-size: cover; background-position: center;"></div>
-                <h3>Ludo Game | Petits Chevaux Implementation</h3>
-                <p>Full Java implementation of the classic board game, featuring graphic and console modes, and scoring history.</p>
-            </div>
-            
-        </div>
+    <div class="project-card" data-category="research" data-modal-target="modal-nanomaterials-future">
+        <div class="project-image-placeholder" style="background-image: url('https://raw.githubusercontent.com/lgirardet23-svg/images/main/Manuf2.png'); background-size: cover; background-position: center;"></div>
+        <h3>Nanomaterials for a Sustainable Future</h3>
+        <p>Research project exploring the key role of nanotechnology in global sustainability challenges (energy, environment, and manufacturing).</p>
+    </div>
+    
+    <div class="project-card" data-category="cad design" data-modal-target="modal-pingpong-tensegrity">
+        <div class="project-image-placeholder" style="background-image: url('https://raw.githubusercontent.com/lgirardet23-svg/images/main/Tens.png'); background-size: cover; background-position: center;"></div>
+        <h3>Tensegrity Ping-Pong Table</h3>
+        <p>CAD modeling of a full-size ping-pong table structure based on the principle of Tensegrity.</p>
+    </div>
+    
+    <div class="project-card" data-category="cad design" data-modal-target="modal-veliable-bicycle">
+        <div class="project-image-placeholder" style="background-image: url('https://raw.githubusercontent.com/lgirardet23-svg/images/main/VeliableProfile.jpg'); background-size: cover; background-position: center;"></div>
+        <h3>Véliable: The Folding Bicycle</h3>
+        <p>Conceptual CAD design of an urban folding bicycle frame focusing on compactness and ease of transport.</p>
+    </div>            
+    
+    <div class="project-card" data-category="cad design" data-modal-target="modal-paddle-valve">
+        <div class="project-image-placeholder" style="background-image: url('https://raw.githubusercontent.com/lgirardet23-svg/images/main/projet1.png'); background-size: cover; background-position: center;"></div>
+        <h3>Paddleboard Safety Valve</h3>
+        <p>Passive valve system to automatically prevent overinflation of stand-up paddleboards due to solar heating.</p>
+    </div>
+    
+    <div class="project-card" data-category="cad design" data-modal-target="modal-bachelor-showcase">
+        <div class="project-image-placeholder" style="background-image: url('https://raw.githubusercontent.com/lgirardet23-svg/images/main/universite-de-franche-comte1-1200x766.jpg'); background-size: cover; background-position: center;"></div>
+        <h3>Bachelor's Projects Showcase</h3>
+        <p>A collection of CAD, Machining, and Prototyping projects from my engineering undergraduate degree.</p>
+    </div>
+    
+    <div class="project-card" data-category="programming software" data-modal-target="modal-ludo-game">
+        <div class="project-image-placeholder" style="background-image: url('https://raw.githubusercontent.com/lgirardet23-svg/images/main/Algo5.png'); background-size: cover; background-position: center;"></div>
+        <h3>Ludo Game | Petits Chevaux Implementation</h3>
+        <p>Full Java implementation of the classic board game, featuring graphic and console modes, and scoring history.</p>
+    </div>
+    
+</div>
     </section>
 
      <section id="contact" class="section-padding">
@@ -276,10 +280,151 @@
         <p>&copy; 2025 Lucas Girardet. All rights reserved.</p>
     </footer>
 
+    <div id="modal-road-sign-analysis" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 class="modal-title">Road Sign Structural Analysis</h2>
+        <p class="modal-subtitle">Finite Element Analysis (FEA) and optimization of a cantilevered motorway sign post.</p>
+        <p class="modal-category">Category: CAD, Mechanical Analysis (Erasmus Project)</p>
+        
+        <div class="modal-gallery">
+            <div class="modal-image-item">
+                <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/MD.png" alt="Creo Max Stress and Deflection results">
+                <p class="image-caption">1. Road Sign Drawing.</p>
+            </div>
+            <div class="modal-image-item">
+                <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/MD5.png" alt="Road sign CAD model with applied forces and boundary conditions">
+                <p class="image-caption">2. Creo model showing applied loads (wind, weight) and anchorage.</p>
+            </div>
+            <div class="modal-image-item">
+                <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/MD6.png" alt="Creo Max Stress and Deflection results">
+                <p class="image-caption">3. Creo results showing maximum Von Mises Stress (left) and Deflection (right).</p>
+            </div>
+            <div class="modal-image-item">
+                <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/MD3.png" alt="Creo comparison of squared and circular cross sections">
+                <p class="image-caption">4. Simulation comparing square vs. circular cross-sections (same area).</p>
+            </div>
+            <div class="modal-image-item">
+                <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/MD4.png" alt="Creo comparison of hollow and solid cross sections">
+                <p class="image-caption">5. Simulation comparing hollow vs. solid circular cross-sections (same area).</p>
+            </div>
+            <div class="modal-image-item">
+                <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/MD7.png" alt="Stress analysis at pole base">
+                <p class="image-caption">6. Close-up of stress and table of results at the pole base (Points A-D).</p>
+            </div>
+            <div class="modal-image-item">
+                <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/MD2.png" alt="Summary table of stress results">
+                <p class="image-caption">7. Summary table comparing Creo, Ansys, and Mathematical stress results.</p>
+            </div>
+        </div>
+        
+        <div class="modal-description">
+            
+            <h3 style="margin-top: 10px; color: var(--color-dark);">Project Goal 🎯</h3>
+            <p class="modal-text-paragraph">
+                The objective was to design and analyze a lightweight cantilevered steel post structure capable of supporting two motorway road signs. The design had to minimize weight while enduring complex loads, including compressive, torsional, bending, and shear stresses, primarily caused by the signs' weight and a maximum wind speed of 100 km/h (473 N/m²).
+            </p>
+            
+            <h3 style="margin-top: 20px; color: var(--color-dark);">Key Stages & Technologies Employed 🛠️</h3>
+            <p class="modal-text-paragraph">
+                <ul>
+                    <li>**FEA Modeling:** The structure was modeled in CAD (Creo) and analyzed using both **Creo Mechanica** and **Ansys FEA**. The final material selected was Structural Steel due to its strength-to-weight ratio and resistance to deflection.</li>
+                    <li>**Optimization Study:** Simulations were conducted to optimize the cross-sectional shape for minimal stress and weight. The circular cross-section showed lower Von Mises stress (10.66 MPa) compared to the square cross-section (11.87 MPa) for the same area.</li>
+                    <li>**Hollow vs. Solid Design:** Further optimization showed that a hollow circular post (Outer D=200mm, Inner D=180mm) significantly reduced stress and achieved a total weight of 346 kg.</li>
+                    <li>**Mathematical Validation:** Stress values were calculated mathematically at four highly stressed points at the base of the pole. The maximum structure Von Mises stress from the FEA was 73.16 MPa, resulting in a Safety Factor of 2.9 against the structural steel's yield strength of 250 MPa.</li>
+                    <li>**Analysis:** The maximum stress was located on the underside of the top 90° angle, which is the predicted point of failure.</li>
+                </ul>
+            </p>
+             <p class="modal-text-paragraph" style="margin-top: 30px; font-style: italic; font-weight: 500;">
+                <i class="fas fa-university" style="color: var(--color-primary); margin-right: 5px;"></i> **Context:** Mechanical Design Lab, Erasmus Semester at **Technological University Dublin**, Ireland (Jan 2024).
+            </p>
+        </div>
+    </div>
+</div>
+    
+    <div id="modal-nanomaterials-future" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 class="modal-title">Nanomaterials for a Sustainable Future</h2>
+            <p class="modal-subtitle">Research on the applications of nanomaterials for environmental remediation.</p>
+            <p class="modal-category">Category: Research, Environmental Engineering (Erasmus Project)</p>
+            
+            <div class="modal-gallery">
+            <div class="modal-image-item">
+                <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Manuf_Poster.png" alt="Full research poster on Nanomaterials and Pollution">
+                <p class="image-caption">1. **Project Poster:** Overview of pollution and nanoremediation.</p>
+            </div>
+            <div class="modal-image-item">
+                <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Manuf2.png" alt="Illustration of air, soil, and water pollution with nanoremediation solutions">
+                <p class="image-caption">2. Visualizing Nanoremediation applications (Air, Soil, Water).</p>
+            </div>
+            <div class="modal-image-item">
+                <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Manuf4.png" alt="Nanomaterials and Sustainability relationship diagram">
+                <p class="image-caption">3. Diagram of Nanomaterials and Sustainability key relationships.</p>
+            </div>
+            <div class="modal-image-item">
+                <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Manuf6.png" alt="Infographic on the scale of nanotechnology">
+                <p class="image-caption">4. Scale of Nanotechnology and comparison of sizes.</p>
+            </div>
+            <div class="modal-image-item">
+                <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Manuf7.png" alt="Graphs showing nanoproduct production trends 2012-2021">
+                <p class="image-caption">5. Nanoproducts demand and waste material trends (2012–2021).</p>
+            </div>
+            <div class="modal-image-item">
+                <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Manuf1.png" alt="Photocatalyst mechanism and magnetic nanoparticle recovery">
+                <p class="image-caption">6. Mechanism of photocatalysis and magnetic recovery for water treatment.</p>
+            </div>
+            <div class="modal-image-item">
+                <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Manuf3.png" alt="Air pollution nanoremediation methods">
+                <p class="image-caption">7. Nanomaterial applications in air pollution remediation.</p>
+            </div>
+             <div class="modal-image-item">
+                <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Manuf9.png" alt="Graphene, fullerene, and carbon nanotube structures">
+                <p class="image-caption">8. Graphene and Carbon Nanotube structures (Energy Section).</p>
+            </div>
+            <div class="modal-image-item">
+                <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Manuf8.png" alt="Robotic pollinator design and mechanism">
+                <p class="image-caption">9. Example of micro-robots used in artificial pollination.</p>
+            </div>
+        </div>
+            
+            <div class="modal-description">
+    
+    <h3 style="margin-top: 10px; color: var(--color-dark);">Project Goal 🎯</h3>
+    <p class="modal-text-paragraph">
+        The objective of this group research project was to explore the pivotal role of nanomaterials in achieving global sustainable development goals. The project covered four primary areas where nanotechnology is driving innovation: Sustainable Manufacturing, Energy (Storage/Production), Pollination, and Pollution (Air/Water/Soil).
+    </p>
+    
+    <h3 style="margin-top: 20px; color: var(--color-dark);">My Contribution: Pollution and Environmental Remediation 🌊</h3>
+    <p class="modal-text-paragraph">
+        My work focused entirely on the Nanomaterials and Pollution section, analyzing how industrialization and agricultural activities increase contamination, and how nanomaterials offer more effective and less toxic clean-up methods than conventional approaches.
+    </p>
+
+    <h4>Water Decontamination Focus: Nanophotocatalysts</h4>
+    <p class="modal-text-paragraph">
+        I concentrated specifically on water decontamination using Nanophotocatalysts (like TiO₂, Fe₂O₃, ZnO). These materials are effective because their unique properties (surface, chemical, magnetic) make them highly reactive.
+        <ul>
+            <li>**Mechanism:** When exposed to light, the nanophotocatalyst is excited, generating electron-hole pairs that lead to the formation of powerful oxidizing agents (like hydroxyl radicals). These radicals break down complex organic pollutants (pesticides, pharmaceuticals) into harmless compounds.</li>
+            <li>**Solution Recovery:** I highlighted the importance of Magnetic Nanoparticle Composites (MNPC), which allow for the easy separation and recovery of the photocatalysts from the treated water using an external magnet, addressing a key challenge in cost-effectiveness and delivery.</li>
+        </ul>
+    </p>
+
+    <h4>Air Pollution and Remediation</h4>
+    <p class="modal-text-paragraph">
+        The analysis also covered air pollution, including the use of **nanofilitration systems** (with pores smaller than 1-10 nanometers) to filter fine particulate matter and the use of **nanocatalysts** in tailpipes to make chemical reactions more efficient and less polluting.
+    </p>
+    
+    <p class="modal-text-paragraph" style="margin-top: 30px; font-style: italic; font-weight: 500;">
+        <i class="fas fa-university" style="color: var(--color-primary); margin-right: 5px;"></i> **Context:** Mechanical Engineering Research Project, Erasmus Semester at **Technological University Dublin**, Ireland (Jan 2024).
+    </p>
+        </div>
+            </div>
+    </div>
+    
     <div id="modal-niceteeth-project" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
-            <h2 class="modal-title">RTeethC: Concentric Tube Dental Robot</h2>
+            <h2 class="modal-title">RTeethC: Concentric Tube Robot for Dental Inspection</h2>
             <p class="modal-subtitle">Design and development of an innovative opto-mechatronic device for intra-oral monitoring.</p>
             <p class="modal-category">Category: CAD / Biomedical Engineering / Mechatronics</p>
             
@@ -331,249 +476,444 @@
             </div>
         </div>
     </div>
-
-    <div id="modal-road-sign-analysis" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2 class="modal-title">Road Sign Structural Analysis</h2>
-            <p class="modal-subtitle">Finite Element Analysis (FEA) and optimization of a cantilevered motorway sign post.</p>
-            <p class="modal-category">Category: CAD, Mechanical Analysis (Erasmus Project)</p>
-            <div class="modal-gallery">
-                <div class="modal-image-item">
-                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/MD1.png" alt="Road Sign Drawing">
-                    <p class="image-caption">1. Road Sign Drawing.</p>
-                </div>
-                <div class="modal-image-item">
-                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/MD5.png" alt="Creo model">
-                    <p class="image-caption">2. Creo model showing applied loads and anchorage.</p>
-                </div>
-                <div class="modal-image-item">
-                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/MD6.png" alt="Stress results">
-                    <p class="image-caption">3. Creo results showing maximum Von Mises Stress and Deflection.</p>
-                </div>
-                <div class="modal-image-item">
-                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/MD3.png" alt="Comparison">
-                    <p class="image-caption">4. Simulation comparing square vs. circular cross-sections.</p>
-                </div>
-                <div class="modal-image-item">
-                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/MD4.png" alt="Hollow vs Solid">
-                    <p class="image-caption">5. Simulation comparing hollow vs. solid circular cross-sections.</p>
-                </div>
-                <div class="modal-image-item">
-                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/MD7.png" alt="Close-up">
-                    <p class="image-caption">6. Close-up of stress and table of results at the pole base.</p>
-                </div>
-                <div class="modal-image-item">
-                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/MD2.png" alt="Summary table">
-                    <p class="image-caption">7. Summary table comparing Creo, Ansys, and Mathematical stress results.</p>
-                </div>
-            </div>
-            <div class="modal-description">
-                <h3 style="margin-top: 10px; color: var(--color-dark);">Project Goal 🎯</h3>
-                <p class="modal-text-paragraph">
-                    The objective was to design and analyze a lightweight cantilevered steel post structure capable of supporting two motorway road signs. The design had to minimize weight while enduring complex loads, including compressive, torsional, bending, and shear stresses, primarily caused by the signs' weight and a maximum wind speed of 100 km/h (473 N/m²).
-                </p>
-                <h3 style="margin-top: 20px; color: var(--color-dark);">Key Stages & Technologies Employed 🛠️</h3>
-                <p class="modal-text-paragraph">
-                    <ul>
-                        <li>**FEA Modeling:** Structure modeled in CAD (Creo) and analyzed with Creo Mechanica and Ansys FEA. The final material selected was Structural Steel due to its strength-to-weight ratio and resistance to deflection.</li>
-                        <li>**Optimization Study:** Simulations were conducted to optimize the cross-sectional shape for minimal stress and weight. The circular cross-section showed lower Von Mises stress (10.66 MPa) compared to the square cross-section (11.87 MPa) for the same area.</li>
-                        <li>**Hollow vs. Solid Design:** Further optimization showed that a hollow circular post (Outer D=200mm, Inner D=180mm) significantly reduced stress and achieved a total weight of 346 kg.</li>
-                        <li>**Mathematical Validation:** Stress values were calculated mathematically at four highly stressed points at the base of the pole. The maximum Von Mises stress from the FEA was 73.16 MPa, resulting in a Safety Factor of 2.9.</li>
-                    </ul>
-                </p>
-                <p class="modal-text-paragraph" style="margin-top: 30px; font-style: italic; font-weight: 500;">
-                    <i class="fas fa-university" style="color: var(--color-primary); margin-right: 5px;"></i> **Context:** Mechanical Design Lab, Erasmus Semester at **Technological University Dublin**, Ireland (Jan 2024).
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div id="modal-nanomaterials-future" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2 class="modal-title">Nanomaterials for a Sustainable Future</h2>
-            <p class="modal-subtitle">Research on the applications of nanomaterials for environmental remediation.</p>
-            <p class="modal-category">Category: Research, Environmental Engineering (Erasmus Project)</p>
-            <div class="modal-gallery">
-                <div class="modal-image-item">
-                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Manuf_Poster.jpg" alt="Research poster">
-                    <p class="image-caption">1. **Project Poster:** Overview of pollution and nanoremediation.</p>
-                </div>
-                <div class="modal-image-item">
-                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Manuf2.jpg" alt="Illustration">
-                    <p class="image-caption">2. Visualizing Nanoremediation applications (Air, Soil, Water).</p>
-                </div>
-                <div class="modal-image-item">
-                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Manuf1.jpg" alt="Mechanism">
-                    <p class="image-caption">3. Mechanism of photocatalysis and magnetic recovery for water treatment.</p>
-                </div>
-                <div class="modal-image-item">
-                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Manuf8.jpg" alt="Robotic pollinator">
-                    <p class="image-caption">4. Example of micro-robots used in artificial pollination.</p>
-                </div>
-            </div>
-            <div class="modal-description">
-                <h3 style="margin-top: 10px; color: var(--color-dark);">Project Goal 🎯</h3>
-                <p class="modal-text-paragraph">
-                    The objective of this group research project was to explore the pivotal role of nanomaterials in achieving global sustainable development goals across four themes: **Sustainable Manufacturing**, **Energy**, **Pollination**, and **Pollution**.
-                </p>
-                <h3 style="margin-top: 20px; color: var(--color-dark);">My Contribution: Pollution and Environmental Remediation 🌊</h3>
-                <p class="modal-text-paragraph">
-                    My work focused entirely on the **Nanomaterials and Pollution** section, analyzing how nanomaterials offer more effective clean-up methods.
-                    <ul>
-                        <li>**Water Decontamination:** Studied Nanophotocatalysts (TiO₂, ZnO) excited by light to break down organic pollutants. Highlighted **Magnetic Nanoparticle Composites (MNPC)** for easy recovery using external magnets.</li>
-                        <li>**Air Pollution:** Analyzed nanofiltration systems and nanocatalysts for making chemical reactions in tailpipes more efficient.</li>
-                    </ul>
-                </p>
-                <p class="modal-text-paragraph" style="margin-top: 30px; font-style: italic; font-weight: 500;">
-                    <i class="fas fa-university" style="color: var(--color-primary); margin-right: 5px;"></i> **Context:** Mechanical Engineering Research Project, Erasmus Semester at **Technological University Dublin**, Ireland (Jan 2024).
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div id="modal-innovative-devices" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2 class="modal-title">Innovative MDs for Visual Impairment</h2>
-            <p class="modal-subtitle">State-of-the-Art Report on innovative medical devices for people with blindness.</p>
-            <p class="modal-category">Category: Biomedical Engineering, Research (Group Project)</p>
-            <div class="modal-gallery">
-                <div class="modal-image-item">
-                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/ProjetTut1.jpg" alt="Report Cover">
-                    <p class="image-caption">1. Project Report Cover Page.</p>
-                </div>
-                <div class="modal-image-item">
-                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/projetTut2.png" alt="Anatomy">
-                    <p class="image-caption">2. Anatomical Diagram of the Human Eyeball.</p>
-                </div>
-                <div class="modal-image-item">
-                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/ProjetTut9.png" alt="Retinal Implant">
-                    <p class="image-caption">3. Images perceived by patients with retinal implants.</p>
-                </div>
-            </div>
-            <div class="modal-description">
-                <h3 style="margin-top: 10px; color: var(--color-dark);">Goal of the Project 🎯</h3>
-                <p class="modal-text-paragraph">
-                    Comprehensive state-of-the-art review of innovative Medical Devices (MD) aimed at people with blindness. The study distinguishes between non-implantable devices (connected glasses) and visual neuroprostheses (retinal implants).
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div id="modal-syringe-packaging" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2 class="modal-title">Syringe & Packaging System</h2>
-            <p class="modal-subtitle">Full modeling from single parts to final assembly.</p>
-            <p class="modal-category">Category: CAD / Biomedical Engineering (Group Project)</p>
-            <div class="modal-gallery">
-                <div class="modal-image-item">
-                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/seringue1.png" alt="Syringe">
-                    <p class="image-caption">1. Detailed view of the syringe (CAD modeling).</p>
-                </div>
-                <div class="modal-image-item">
-                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/seringue3.png" alt="Box">
-                    <p class="image-caption">2. Open box showing the packaging.</p>
-                </div>
-            </div>
-            <div class="modal-description">
-                 <h3 style="margin-top: 10px; color: var(--color-dark);">Project Goal 🎯</h3>
-                <p class="modal-text-paragraph">
-                    Designed for veterinarians during herd vaccination campaigns. Includes a safety needle with a rotating locking cap and a Polystyrene thermal packaging box for seven syringe sets.
-                </p>
-            </div>
-        </div>
-    </div>
-
+    
     <div id="modal-robotics-internship" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
             <h2 class="modal-title">Robotics in Neurosurgery (Incoming)</h2>
-            <p class="modal-subtitle">Research Internship at Western University, Canada | Robotics Control System Development</p>
+            <p class="modal-subtitle">Research Internship at CSTAR (Western University, Canada) | Robotics Control System Development</p>
             <p class="modal-category">Category: Biomedical, Programming, ROS2 (Future Project)</p>
+            
             <div class="modal-gallery">
                 <div class="modal-image-item">
-                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Western_University.png" alt="Western University">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Western_University.png" alt="Western University - Research Lab">
                     <p class="image-caption">1. Western University - Research Lab.</p>
                 </div>
             </div>
+            
             <div class="modal-description">
+                
                 <h3 style="margin-top: 10px; color: var(--color-dark);">Project Goal 🎯</h3>
                 <p class="modal-text-paragraph">
-                    Assist in developing a novel surgical navigation system, assessing the accuracy of magnetic tracking combined with medical robotics. Focus on ROS2 and Python integration.
+                    The primary objective of this research experience is to assist in the development of a novel surgical navigation system. This project aims to assess and establish the baseline accuracy (surgical metrology) of a magnetic tracking system (a "GPS for surgery") when used in conjunction with a medical robot.
+                </p>
+                
+                <h3 style="margin-top: 20px; color: var(--color-dark);">Key Stages & Technologies Employed 🛠️</h3>
+                <p class="modal-text-paragraph">
+                    <ul>
+                        <li>**Experimental Design:** Collaborating with graduate students in designing experiments, collecting data, and performing numerical analysis.</li>
+                        <li>**Technical Evaluation:** Evaluating the accuracy of the magnetic tracker in the presence of the surgical robot.</li>
+                        <li>**Core Focus:** The project combines a surgical robot, magnetic tracking, and X-ray fluoroscopy.</li>
+                        <li>**Technology Focus:** ROS2, Python/C++, Robotics, Biomechanics, Medical Imaging, System Integration.</li>
+                    </ul>
+                </p>
+                 <p class="modal-text-paragraph" style="margin-top: 30px; font-style: italic; font-weight: 500;">
+                    <i class="fas fa-university" style="color: var(--color-primary); margin-right: 5px;"></i> **Hosting Institution:** CSTAR (Western University), Canada | Duration: 6 weeks (Jan 12 - Feb 22, 2026).
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <div id="modal-innovative-devices" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 class="modal-title">Innovative MDs for Visual Impairment</h2>
+            <p class="modal-subtitle">State-of-the-Art Report on innovative medical devices for people with blindness or near blindness.</p>
+            <p class="modal-category">Category: Biomedical Engineering, Research (Group Project)</p>
+            
+            <div class="modal-gallery">
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/ProjetTut1.jpg" alt="Rapport de projet sur les DMs innovants pour déficients visuels - Page de Couverture">
+                    <p class="image-caption">1. Project Report Cover Page.</p>
+                </div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/projetTut2.png" alt="Schéma du globe oculaire et du système visuel">
+                    <p class="image-caption">2. **Anatomical Diagram of the Human Eyeball.**</p>
+                </div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/ProjetTut4.png" alt="Diagram of the retinal layers and visual system cells">
+                    <p class="image-caption">3. **Diagram of the retinal layers and visual system cells** (Rod, Cone, Ganglion cells, etc.).</p>
+                </div>
+                 <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/ProjetTut5.png" alt="WHO classification of visual impairment in 5 categories">
+                    <p class="image-caption">4. **Classification of visual impairment in 5 categories according to the WHO (World Health Organization)**.</p>
+                </div>
+                 <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/ProjetTut6.png" alt="Comparison diagram of different auditory pathways (airborne and bone conduction)">
+                    <p class="image-caption">5. **Comparison diagram of different auditory pathways** (airborne and bone conduction).</p>
+                </div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/projetTut3.png" alt="Exemple de dispositif de substitution sensorielle The vOICe">
+                    <p class="image-caption">6. **The vOICe: Auditory-to-Visual Sensory Substitution** (Non-Implantable).</p>
+                </div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/ProjetTut7.png" alt="Summary table of non-implantable medical devices for profound to total visual impairment">
+                    <p class="image-caption">7. **Summary table of non-implantable medical devices** for profound to total visual impairment.</p>
+                </div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/ProjetTut8.png" alt="Simplified eye diagram with different retinal neuroprosthesis implantation sites">
+                    <p class="image-caption">8. **Simplified eye diagram with different retinal neuroprosthesis implantation sites** (epiretinal, subretinal, or supra-choroidal).</p>
+                </div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/ProjetTut9.png" alt="Images perceived by patients with a retinal implant at 16, 256 and 1000 electrodes">
+                    <p class="image-caption">9. **Images perceived by patients with a retinal implant** at 16 (a), 256 (b) and 1000 electrodes (c).</p>
+                </div>
+            </div>
+            
+            <div class="modal-description">
+                
+                <h3 style="margin-top: 10px; color: var(--color-dark);">Goal of the Project 🎯</h3>
+                <p class="modal-text-paragraph">
+                    The main goal of this project was to conduct a comprehensive state-of-the-art review of **innovative Medical Devices (MD)** aimed at people with blindness or near blindness. The ambition was to determine how these cutting-edge technologies can promote inclusion and autonomy in the daily lives of patients.
+                </p>
+                
+                <h3 style="margin-top: 20px; color: var(--color-dark);">Abstract </h3>
+                <p class="modal-text-paragraph">
+                    After exposing the anatomical aspect of the visual system and associated pathologies, this report presents a complete state-of-the-art of **innovative medical devices (MD) for people with blindness or near blindness**, with an objective of inclusion and autonomy. It distinguishes two main families: **non-implantable devices** (connected glasses, smart canes, or GPS assistants), and **implantable devices** (visual neuroprostheses). The document analyzes their functioning, clinical maturity, and performance. Particular attention is paid to technological innovations (AI, image processing, brain-machine interfaces) and regulatory issues (CE marking, EU regulation 2017/745). While non-implantable devices are readily available and improve daily life, implantable devices, though complex and mostly experimental, are followed with special attention as they promise to "restore a visual sensation". The study concludes by suggesting that the integration of new technologies should respect ethical, social, and environmental values.
+                </p>
+                
+                <p class="modal-text-paragraph" style="margin-top: 30px; font-style: italic; font-weight: 500;">
+                    <i class="fas fa-users" style="color: var(--color-primary); margin-right: 5px;"></i> **Group Project:** Realized by Odile Slifi, Lucas Girardet, and Lucas Dordor (ISIFC 1A).
                 </p>
             </div>
         </div>
     </div>
-
+    <div id="modal-syringe-packaging" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 class="modal-title">Syringe & Packaging System</h2>
+            <p class="modal-subtitle">Full modeling from single parts to final assembly, including design validation.</p>
+            <p class="modal-category">Category: CAD / Biomedical Engineering (Group Project)</p>
+            <div class="modal-gallery">
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/seringue1.png" alt="Detailed view of the syringe">
+                    <p class="image-caption">1. Detailed view of the syringe (CAD modeling).</p>
+                </div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/seringue2.png" alt="Closed box with syringes inside">
+                    <p class="image-caption">2. Closed packaging box, containing the syringes.</p>
+                </div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/seringue3.png" alt="Open box showing the packaging">
+                    <p class="image-caption">3. Open box showing the packaging.</p>
+                </div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/seringue4.png" alt="Needle with safety cap">
+                    <p class="image-caption">4. Modeling of the needle with its safety cap.</p>
+                </div>
+            </div>
+            <div class="modal-description">
+                
+                 <h3 style="margin-top: 10px; color: var(--color-dark);">Project Goal 🎯</h3>
+                <p class="modal-text-paragraph">
+                    This project was completed to meet the specific needs of veterinarians during herd vaccination campaigns, focusing on safety and practical weekly conditioning of medical supplies. The goal was to design a complete system: a safety needle and its associated thermal packaging.
+                </p>
+                
+                 <h3 style="margin-top: 20px; color: var(--color-dark);">Key Stages & Technologies Employed 🛠️</h3>
+                <p class="modal-text-paragraph">
+                    <ul>
+                         <li>**Needle Design (Monobloc & Multi-part):** The initial design was based on the standard **20-Gauge** (0.91mm outer diameter, 4cm length) used for bovine subcutaneous injections. The modeling progressed from a "monobloc" concept to the final assembly of two distinct parts: the biocompatible metal cannula and the plastic insert (hub).</li>
+                         <li>**Safety Cap Mechanism:** A rotating safety cap was designed with minimal support zones (`crans`) that engage the plastic insert only when turned to a specific alignment. This system allows the cap to be removed without detaching the needle for injection (Phase 2), and subsequently reattached and rotated to safely lock and remove the used needle for disposal (Phase 3).</li>
+                         <li>**Packaging Modeling:** A simple, secure box was modeled in Polystyrene to ensure thermal insulation during transport, a requirement essential for vaccine integrity. The box was dimensioned to hold seven complete, non-assembled syringe-needle sets.</li>
+                         <li>**Validation:** The final packaging was validated through assembly checks and a cross-section view to confirm zero interference between the seven sets when the box is closed.</li>
+                    </ul>
+                </p>
+                
+                 <p class="modal-text-paragraph" style="margin-top: 30px; font-style: italic; font-weight: 500;">
+                    <i class="fas fa-users" style="color: var(--color-primary); margin-right: 5px;"></i> **Group Project:** Realized by Lucas Girardet and Schoen Elise (ISIFC 1A).
+                </p>
+            </div>
+        </div>
+    </div>
     <div id="modal-pingpong-tensegrity" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
             <h2 class="modal-title">Tensegrity Ping-Pong Table</h2>
-            <p class="modal-subtitle">CAD modeling based on the Tensegrity principle.</p>
-            <p class="modal-category">Category: CAD / Design</p>
+            <p class="modal-subtitle">CAD modeling of a table tennis structure based on the Tensegrity principle.</p>
+            <p class="modal-category">Category: CAD / Design / Mechanical</p>
+            
             <div class="modal-gallery">
-                <div class="modal-image-item"><img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Tens.png" alt="Table"><p class="image-caption">1. 3D render.</p></div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Tens_inspo.png" alt="Inspiration Tensegrity Structure">
+                    <p class="image-caption">1. Initial inspiration: an existing Tensegrity structure by Laurent Dufour.</p>
+                </div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Tens_Schema.png" alt="Design sketches and dimensions">
+                    <p class="image-caption">2. Design sketches showing the plateau and base dimensions (in cm).</p>
+                     </div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Tens.png" alt="Render of the Tensegrity Ping-Pong Table">
+                    <p class="image-caption">3. Final 3D render of the Tensegrity Table (Overview).</p>
+                </div>
+                 <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Tens6.png" alt="Close-up of the structure's Tensegrity support">
+                    <p class="image-caption">4. Close-up view of the central support mechanism.</p>
+                </div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Tens_Socle.png" alt="Base with storage">
+                    <p class="image-caption">5. Detailed view of the base (Socle), including storage for balls and rackets.</p>
+                </div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Tens7.png" alt="Close-up of the net attachment">
+                    <p class="image-caption">6. Close-up of the net and table surface.</p>
+                </div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Tens4.png" alt="Accessories modeling detail">
+                    <p class="image-caption">7. Modeling detail of the accessories (rackets and ball).</p>
+                </div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Tens2.png" alt="Side view of the table structure">
+                    <p class="image-caption">8. Side perspective view of the table structure.</p>
+                </div>
+            </div>
+            
+            <div class="modal-description">
+                
+                <h3 style="margin-top: 10px; color: var(--color-dark);">Project Goal 🎯</h3>
+                <p class="modal-text-paragraph">
+                    The main objective was to design and model a functional object or structure using the **Tensegrity principle** (a structural system using continuous tension and discontinuous compression). The design had to meet contest constraints requiring **Aluminum** as the primary material. By aligning with a leisure/camping theme, the Ping-Pong table was selected as the best compromise.
+                </p>
+                
+                <h3 style="margin-top: 20px; color: var(--color-dark);">Key Stages & Technologies Employed 🛠️</h3>
+                <p class="modal-text-paragraph">
+                    <ul>
+                        <li>**Research and Inspiration:** The project started by adapting an existing Tensegrity artwork, which served as the foundation for transforming the structure into a functional table.</li>
+                        <li>**Design and Sketching:** The concept was first translated into sketches, adapting the initial structure and defining dimensions (e.g., total height of 75 cm) to meet standard table tennis specifications.</li>
+                        <li>**CAD Modeling (3D):** The entire design was modeled in 3D, respecting the structural integrity of the tensegrity system (cables replacing rigid connections).</li>
+                        <li>**Details and Finalization:** Accessories such as the net and suspension cables were modeled for the final assembly. The base was specifically designed to include integrated storage slots for balls and rackets.</li>
+                    </ul>
+                </p>
+                 <p class="modal-text-paragraph" style="margin-top: 30px; font-style: italic; font-weight: 500;">
+                    <i class="fas fa-tools" style="color: var(--color-primary); margin-right: 5px;"></i> **Technical Challenge:** Successfully translating the tension/compression structure into a stable and usable table design, while adhering to dimension and material constraints.
+                </p>
             </div>
         </div>
     </div>
-
     <div id="modal-veliable-bicycle" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
             <h2 class="modal-title">Véliable: The Folding Bicycle</h2>
-            <p class="modal-subtitle">Kinematic study of a folding bicycle frame.</p>
+            <p class="modal-subtitle">Conceptual CAD design and kinematic study of a novel folding bicycle frame.</p>
             <p class="modal-category">Category: CAD / Mechanical Design</p>
+            
             <div class="modal-gallery">
-                <div class="modal-image-item"><img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/VeliableProfile.jpg" alt="Bicycle"><p class="image-caption">1. CAD render.</p></div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Veliable_inspo.png" alt="Inspiration photo of a folding bike">
+                    <p class="image-caption">1. Design inspiration: existing urban folding bike.</p>
+                </div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/VeliableProfile.jpg" alt="Véliable bicycle frame profile">
+                    <p class="image-caption">2. Final CAD render of the Véliable frame structure.</p>
+                </div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Veliable5.jpg" alt="Folding mechanism view 1">
+                    <p class="image-caption">3. Frame in its folded position, highlighting the compact nature of the design.</p>
+                </div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Veliable3.png" alt="Rear frame CAD detail">
+                    <p class="image-caption">4. CAD render of the rear section of the frame.</p>
+                </div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Veliable4.png" alt="Detailed CAD view of a folding joint">
+                    <p class="image-caption">5. Detailed CAD view of a main folding joint (pivot) component.</p>
+                </div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Veliable1.png" alt="Pivot and component identification">
+                    <p class="image-caption">6. Kinematic scheme showing pivot points and major components.</p>
+                </div>
+                 <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Poster_Véliable.jpg" alt="Project poster with methodology">
+                    <p class="image-caption">7. Project poster detailing the methodology (needs analysis, CAD, research).</p>
+                </div>
+            </div>
+            
+            <div class="modal-description">
+                
+                <h3 style="margin-top: 10px; color: var(--color-dark);">Project Goal 🎯</h3>
+                <p class="modal-text-paragraph">
+                    The objective of this CAD design project was to create a novel folding bicycle frame with minimal bulk when folded, prioritizing easy transport and storage for urban commuters. The frame needed to be foldable quickly to adapt to different modes of transport (bus, train, car).
+                </p>
+                
+                <h3 style="margin-top: 20px; color: var(--color-dark);">Key Stages & Technologies Employed 🛠️</h3>
+                <p class="modal-text-paragraph">
+                    <ul>
+                        <li>**Needs Definition:** An initial phase was dedicated to defining the need, functional analysis, and identifying key design constraints (e.g., small size, speed of folding, transport ease).</li>
+                        <li>**CAD Modeling and Dimensioning:** The entire frame was modeled in CAD, including the definition of four primary pivot joints to enable the folding mechanism.</li>
+                        <li>**Kinematic Study:** The movement was studied to ensure that the folding mechanism achieved the most compact form possible, particularly by folding the fork and the seat tube alongside the carbon frame.</li>
+                        <li>**Research and Optimization:** A research phase focused on different types of folding hinges (e.g., Allen key, lever) to ensure secure, efficient, and reliable locking for a durable product.</li>
+                    </ul>
+                </p>
+                 <p class="modal-text-paragraph" style="margin-top: 30px; font-style: italic; font-weight: 500;">
+                    <i class="fas fa-tools" style="color: var(--color-primary); margin-right: 5px;"></i> **Technology Focus:** CAD Modeling (Catia/SolidWorks), Kinematic Analysis, Mechanical Joints Design.
+                </p>
             </div>
         </div>
     </div>
-
     <div id="modal-paddle-valve" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
             <h2 class="modal-title">Paddleboard Pressure-Regulating Valve</h2>
-            <p class="modal-subtitle">Safety system to prevent overinflation.</p>
-            <p class="modal-category">Category: CAD / Design</p>
+            <p class="modal-subtitle">Design and prototyping of an essential safety system to prevent overinflation in inflatable paddleboards.</p>
+            <p class="modal-category">Category: CAD / Design (Group Project)</p>
             <div class="modal-gallery">
-                <div class="modal-image-item"><img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/projet1.png" alt="Valve"><p class="image-caption">1. CAD model.</p></div>
+                 <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/projet1.png" alt="CAD Model of the valve system - closed">
+                    <p class="image-caption">1. Final CAD model of the complete valve system (closed view).</p>
+                </div>
+                 <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Projet2.png" alt="CAD Model of the valve system - open">
+                    <p class="image-caption">2. Internal CAD view showing the piston mechanism and spring housing.</p>
+                </div>
+                 <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Projet3.png" alt="3D Printed Prototype of the housing">
+                    <p class="image-caption">3. 3D-printed prototype of the valve body, ready for assembly.</p>
+                </div>
+                 <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Projet4.png" alt="Physical Prototype of the internal mechanism">
+                    <p class="image-caption">4. Physical prototype of the internal pressure regulation mechanism.</p>
+                </div>
+                 <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/projet5.jpg" alt="Project Report Poster">
+                    <p class="image-caption">5. Project summary poster, including methodology and results.</p>
+                </div>
+            </div>
+            <div class="modal-description">
+                
+                <h3 style="margin-top: 10px; color: var(--color-dark);">Project Goal 🎯</h3>
+                <p class="modal-text-paragraph">
+                    This project involved the complete design, prototyping, and validation of a **passive pressure-regulating valve** for inflatable stand-up paddleboards. The primary goal was to create a robust and reliable system capable of automatically releasing excess air pressure. This prevents damage to the board, which can occur when internal pressure rises due to sun exposure and heat, while the user is out on the water.
+                </p>
+                 <h3 style="margin-top: 20px; color: var(--color-dark);">Key Stages & Technologies Employed 🛠️</h3>
+                <p class="modal-text-paragraph">
+                    The core challenge was to design a valve that maintains a precise maximum pressure (e.g., 15 PSI) using a mechanical spring system, while remaining watertight and easy to integrate.
+                    <ul>
+                        <li><strong>Conceptual Design:</strong> Analysis of pressure/temperature effects on inflatable structures and spring mechanics calculation to define the release threshold.</li>
+                        <li><strong>CAD Modeling (Catia V5):</strong> Detailed modeling of the valve housing and all moving parts (piston, gaskets, spring seat), focusing on high-precision assembly.</li>
+                        <li><strong>Prototyping:</strong> Used 3D printing (FDM) for the housing and small parts. Machining was considered for the final production of high-stress components.</li>
+                        <li><strong>Validation & Iteration:</strong> Bench testing of the prototype revealed initial leakage issues around the joint plane, leading to a crucial re-design phase focusing on gasket integration and surface finish to ensure reliable pressure retention.</li>
+                    </ul>
+                </p>
+                 <p class="modal-text-paragraph" style="margin-top: 30px; font-style: italic; font-weight: 500;">
+                    <i class="fas fa-users" style="color: var(--color-primary); margin-right: 5px;"></i> **Group Project:** Realized by Lucas Girardet and Ambéis Matéo (L2 Mécanique 2022/2023).
+                </p>
             </div>
         </div>
     </div>
-
     <div id="modal-bachelor-showcase" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
             <h2 class="modal-title">Bachelor's Projects Showcase</h2>
-            <p class="modal-subtitle">Collection of CAD and prototyping works.</p>
-            <p class="modal-category">Category: CAD / Prototyping</p>
+            <p class="modal-subtitle">A selection of individual works realized during my undergraduate degree in Engineering Sciences to master CAD and manufacturing techniques.</p>
+            <p class="modal-category">Category: CAD / Prototyping (Individual Projects)</p>
+            
             <div class="modal-gallery">
-                <div class="modal-image-item"><img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/goodie1.png" alt="Goodie"><p class="image-caption">1. Laser cutting.</p></div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/goodie1.png" alt="Goodie Project - Laser-cut part">
+                    <p class="image-caption">1. Goodie Project: CAD modeling and laser cutting (PMMA).</p>
+                </div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/goodie2.png" alt="Goodie Project - Base and Assembly">
+                    <p class="image-caption">2. Goodie Project: Base and close assembly to achieve a tight fit.</p>
+                </div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Sphere1.png" alt="Sphere Project - Layered assembly">
+                    <p class="image-caption">3. Sphere Project: Cross-section showing the assembly axis and layers.</p>
+                </div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Sphere2.png" alt="Sphere Project - CAD design detail">
+                    <p class="image-caption">4. Sphere Project: CAD detail showing the calculated layers (Catia V5).</p>
+                </div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Sphere3.png" alt="Sphere Project - Internal axis">
+                    <p class="image-caption">5. Sphere Project: Final layered assembly (Plywood).</p>
+                </div>
+            </div>
+            
+            <div class="modal-description">
+                
+                <h3 style="margin-top: 10px; color: var(--color-dark);">Project Goal 🎯</h3>
+                <p class="modal-text-paragraph">
+                    These are examples of other projects conducted during my Bachelor's studies in Engineering. The goal was to develop practical proficiency in Computer-Aided Design (CAD), 3D modeling, and techniques like rapid prototyping (laser cutting) and machining. The main objective was to integrate <strong>manufacturing constraints</strong> (such as play, tight fit, and tolerancing) directly into the design phase.
+                </p>
+                
+                <h3 style="margin-top: 20px; color: var(--color-dark);">Project 1: Goodie Design & Manufacturing (PMMA)</h3>
+                <p class="modal-text-paragraph">
+                    The goal was to design and manufacture a two-part promotional item (goodie) in PMMA (polymethyl methacrylate) using laser cutting.
+                    <ul>
+                        <li><strong>CAD:</strong> Modeling of the plate and the base in Catia, including the use of Sketch Tracer to integrate a personalized logo.</li>
+                        <li><strong>Key Challenge:</strong> Ensuring a <strong>tight, secure fit</strong> of the plate into the base.</li>
+                        <li><strong>Solution:</strong> The actual thickness of the PMMA plate was measured (2.8mm instead of 3mm nominal). The slot in the base was precisely adjusted from 3mm to 2.7mm in the laser machine's software to compensate for material thickness variation and achieve the desired tight fit.</li>
+                    </ul>
+                </p>
+                
+                <h3 style="margin-top: 20px; color: var(--color-dark);">Project 2: Layered Sphere Prototyping (Plywood)</h3>
+                <p class="modal-text-paragraph">
+                    This project focused on recreating a 40mm diameter sphere from 3mm thick plywood plates by stacking laser-cut circular layers.
+                    <ul>
+                        <li><strong>Strategy:</strong> Determining the number of layers (15 final layers) and calculating the diameter of each successive disc to closely approximate a spherical shape.</li>
+                        <li><strong>Key Challenge:</strong> Ensuring a tight, secure fit between the discs and the central assembly axis.</li>
+                        <li><strong>Solution:</strong> The central axis was modeled in Catia. The diameter of the inner holes in the discs was adjusted to 2.55mm (for a theoretical 2.5mm axis). This precise adjustment ensured the required tight fit for a stable stacking of the layers.</li>
+                    </ul>
+                </p>
+
             </div>
         </div>
     </div>
-
     <div id="modal-ludo-game" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
-            <h2 class="modal-title">Software Project: Ludo Game</h2>
-            <p class="modal-subtitle">Java implementation of the classic board game.</p>
+            <h2 class="modal-title">Software Project: Ludo Game (Jeu des Petits Chevaux)</h2>
+            <p class="modal-subtitle">Full implementation of the classic French board game in Java.</p>
             <p class="modal-category">Category: Programming / Software Development</p>
+            
             <div class="modal-gallery">
-                <div class="modal-image-item"><img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Algo5.png" alt="Ludo"><p class="image-caption">1. Game Interface.</p></div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Algo1.png" alt="Main menu and game modes selection">
+                    <p class="image-caption">1. Main Menu and Selection of Game Modes.</p>
+                </div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Algo2.png" alt="Solo mode and difficulty selection">
+                    <p class="image-caption">2. Solo Mode Setup: Difficulty Selection.</p>
+                </div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Algo3.png" alt="Two player mode setup">
+                    <p class="image-caption">3. Two-Player Race Mode Setup.</p>
+                </div>
+                <div class="modal-image-item">
+                    <img src="https://raw.githubusercontent.com/lgirardet23-svg/images/main/Algo4.png" alt="Console mode display of the game">
+                    <p class="image-caption">4. In-Game View (Console Mode).</p>
+                </div>
+            </div>
+            
+            <div class="modal-description">
+               <h3 style="margin-top: 10px; color: var(--color-dark);">Project Goal 🎯</h3>
+                <p class="modal-text-paragraph">
+                    The core objective was the comprehensive implementation of the classic French board game, **Jeu des Petits Chevaux** (similar to Ludo), in Java as part of an Algorithmic and Programming coursework. The application needed to support variable difficulty levels and two distinct game modes: a **Solo mode** with a limited number of moves, and a **Two-player Race mode**.
+                  </p>
+                <h3 style="margin-top: 20px; color: var(--color-dark);">Key Stages & Technologies Employed 🛠️</h3>
+    <p class="modal-text-paragraph">
+        <ul>
+            <li>**Multi-Version Development:** The application features both a text-based non-graphic (console) version and a **graphical user interface (GUI) version**.</li>
+            <li>**Difficulty Scaling:** Three difficulty levels, Beginner, Pro, and Legend, were implemented. The chosen level dynamically adjusts the size of the game board and sets the maximum number of moves allowed in Solo mode.</li>
+            <li>**Special Case Logic:** The game includes **Bonus and Penalty** squares that enable players to advance, rewind, receive an extra roll, or lose their turn, respectively. Additionally, players must land exactly on the final square, otherwise, they return to their previous position.</li>
+            <li>**Persistence & History:** The console version saves a detailed score history of all games played (Solo and Duo) into separate files, including player names, final board matrices, and the number of turns taken.</li>
+                </ul>
+                    </p>
+                    <p class="modal-text-paragraph" style="margin-top: 30px; font-style: italic; font-weight: 500;">
+                    <i class="fas fa-code" style="color: var(--color-primary); margin-right: 5px;"></i> **Technology Focus:** Java, Console I/O, Basic GUI (EcranGraphique library), Randomization (`Math.random()`), File Management (I/O).
+                </p>
             </div>
         </div>
     </div>
-
+    
+    
     <div id="fullscreenImageModal" class="fullscreen-modal">
         <span class="fullscreen-modal-close">&times;</span>
         <img class="fullscreen-modal-content" id="fullImage">
     </div>
 
     <script>
+        // Fonctions pour les modales
         function showFullScreen(imgSrc) {
             const modal = document.getElementById('fullscreenImageModal');
             const fullImage = document.getElementById('fullImage');
@@ -612,6 +952,7 @@
         }
 
         document.addEventListener('DOMContentLoaded', () => {
+            // Projet : ouverture modale
             const projectsGrid = document.querySelector('.projects-grid');
             if (projectsGrid) {
                 projectsGrid.addEventListener('click', (event) => {
@@ -625,6 +966,7 @@
                 });
             }
 
+            // Fermeture modale projet
             const modals = document.querySelectorAll('.modal');
             modals.forEach(modal => {
                 const closeBtn = modal.querySelector('.close-btn');
@@ -642,6 +984,7 @@
                 });
             });
 
+            // Fermeture modale image
             const fullscreenModal = document.getElementById('fullscreenImageModal');
             const fullscreenCloseBtn = document.querySelector('.fullscreen-modal-close');
             if (fullscreenCloseBtn) {
@@ -657,6 +1000,8 @@
                 });
             }
 
+            // Ajout de l'écouteur d'événements pour les images des modales
+            // On s'assure que cela fonctionne pour toutes les galeries d'images dans les modaux
             modals.forEach(modal => {
                 const modalImageItems = modal.querySelectorAll('.modal-image-item');
                 modalImageItems.forEach(item => {
@@ -669,6 +1014,8 @@
                 });
             });
 
+
+            // FILTERS LOGIC
             const filterButtons = document.querySelectorAll('.filter-btn');
             const projectCards = document.querySelectorAll('.project-card');
 
@@ -681,6 +1028,7 @@
 
                     projectCards.forEach(card => {
                         const categories = card.getAttribute('data-category');
+                        
                         if (filter === 'all' || categories.includes(filter)) {
                             card.style.display = 'block';
                             setTimeout(() => card.style.opacity = '1', 10);
@@ -694,4 +1042,5 @@
         });
     </script>
 </body>
+
 </html>
